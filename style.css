@@ -1,0 +1,249 @@
+*{
+    /* border: 2px solid red; */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-size: 1em;
+  }
+:root{
+    --aclonica: 'Aclonica', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --purple: #9100FF;
+    --orange: #FF6663;
+    --grey: rgba(255, 255, 255, 0.782);
+    /* --grey: #000; */
+    --white: #fff;
+    --black: #000;
+    --linear: linear-gradient(rgba(145, 0, 255, 1), rgba(0, 255, 234, 1));
+}
+.btns{
+  color: var(--white);
+  border-radius: 25px;
+  position: relative;
+  transition: 0.3s all;
+  text-decoration: none;
+}
+.btns:hover{
+  transform: scale(0.9);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex_a{
+  display: flex;
+  align-items: center;
+}
+.flex_j{
+  display: flex;
+  align-items: center;
+}
+.pm0{
+  padding: 0 0;
+  margin: 0 0;
+}
+.para{
+  color: var(--grey);
+  font-size: 18px;
+  line-height: 23px;
+}
+/* wrap 1--------- */
+.hero{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap1{
+  background: url(img/bg.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.header{
+    justify-content: space-between;
+    width: 90%;
+    height: 20vh;
+}
+.circlewrap{
+  padding: 15px 15px;
+  font-size: 15px;
+  font-family: var(--Roboto);
+  font-weight: bold;
+  background: var(--purple);
+}
+.noti{
+  position: absolute;
+  top: -3px;
+  right: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--white);
+}
+/* menu---- */
+.dots-menu {
+  /* position: absolute; */
+  min-height: 80vh;
+  width: 100%;
+}
+.menuwrap{
+    position: fixed;
+    top: 40%;
+    right: 5%;
+    z-index: 999;
+}
+.menu-box{
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px 0;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+li:hover .menu-text{
+  background: var(--purple);
+  display: block;
+}
+.menu-text{
+  border-radius: 25px;
+  padding: 5px 10px;
+  display: none;
+}
+.menu-box .circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #9100FF;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* hero-section---- */
+.header-text{
+  flex-basis: 60%;
+}
+
+.header-text h1, .header-text h3{
+  font-family: var(--aclonica);
+  font-size: 6rem;
+}
+.header-text h3{
+  color: var(--purple);
+}
+.header-text .btns{    
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2% 8%;
+    border-radius: 25px;
+    font-size: 20px;
+    border: 3px solid var(--purple);
+    font-family: var(--aclonica);
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.header-text .btns:hover{
+  background: var(--purple);
+  color: #fff;
+}
+.headerImg{
+  max-width: 30%;
+}
+.headerImg img{
+  width: 100%;
+}
+
+/* wrap2----------- */
+.wrap2{
+  width: 100%;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 996px) and (max-width: 1220px) {
+  .header-text h1, .header-text h3{
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 995px) {
+  .header-text h1, .header-text h3{
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 720px) {
+  .dots-menu {
+    flex-direction: row-reverse;
+  }
+  .hero{
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin: 0 5%;
+  }
+  .headerImg{
+    max-width: 60%;
+  }
+  .header-text {
+    margin: 5% 0%;
+  }
+}
+@media only screen and (min-width: 449px) and (max-width: 720px) {
+  .header-text h1, .header-text h3{
+    font-size: 36px;
+  }
+  .header-text .para{
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+  .header-text h1, .header-text h3{
+    font-size: 24px;
+  }
+  .headerImg{
+    max-width: 70%;
+  }
+  .header-text .para{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 485px) {
+
+}
+
+@media only screen and (min-width: 485px) and (max-width: 639px) {
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1020px) {
+}
+
+@media only screen and (min-width: 640px) and (max-width: 965px) {
+
+}
+
+@media only screen and (min-width: 1400px){
+  .header-text{
+    flex-basis: 50%;
+  }  
+  
+}
