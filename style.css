@@ -146,6 +146,7 @@ li:hover .menu-text{
 .header-text h1, .header-text h3{
   font-family: var(--aclonica);
   font-size: clamp(1rem, 7vw, 5rem);
+  color: aqua;
 }
 .header-text h3{
   color: var(--purple);
@@ -185,7 +186,6 @@ li:hover .menu-text{
   .headerImg{
     max-width: 70%;
   }
-=
 }
 
 @media only screen and (min-width: 0px) and (max-width: 720px) {
