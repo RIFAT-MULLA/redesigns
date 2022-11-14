@@ -91,12 +91,8 @@
   /* background: var(--purple); */
   border: 3px solid #9100FF;
 }
-.circlewrap .pop{
+.circlewrap #pop{
   margin: 0 10px 0 0;
-  display: none;
-}
-.circlewrap:hover .pop{
-  display: block;
 }
 
 
@@ -168,7 +164,7 @@ li:hover .menu-text{
     padding: 2% 8%;
     border-radius: 25px;
     font-size: 20px;
-    border: 3px solid var(--purple);
+    background: var(--purple);
     font-family: var(--aclonica);
     text-decoration: none;
     transition: 0.3s all;
@@ -228,6 +224,13 @@ li:hover .menu-text{
   .para{
     margin-top: 5px;
   }
+  .circlewrap #pop{
+    display: none;
+  }
+  .circlewrap:active #pop{
+    display: block;
+  }
+  
 }
 
 @media only screen and (min-width: 1400px){
