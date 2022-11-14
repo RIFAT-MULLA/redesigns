@@ -54,7 +54,7 @@
 }
 .para{
   color: var(--grey);
-  font-size:  clamp(0.5rem, 3vw, 2rem);
+  font-size:  clamp(1rem, 3.5vw, 2rem);
   line-height: auto;
 }
 /* wrap 1--------- */
@@ -185,9 +185,7 @@ li:hover .menu-text{
   .headerImg{
     max-width: 70%;
   }
-  .hero{
-    min-height: 0vh;
-  }
+=
 }
 
 @media only screen and (min-width: 0px) and (max-width: 720px) {
@@ -202,7 +200,7 @@ li:hover .menu-text{
     flex-direction: column-reverse;
     justify-content: flex-end;
     min-height: 70vh;
-    margin: 0 5%;
+    margin: 0 5% 10% 5%;
   }
   .header{
     min-height: 20vh;
