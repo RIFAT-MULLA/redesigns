@@ -146,7 +146,7 @@ li:hover .menu-text{
 .header-text h1, .header-text h3{
   font-family: var(--aclonica);
   font-size: 6rem;
-  color: #FF6663;
+  /* color: #FF6663; */
 }
 .header-text h3{
   color: var(--purple);
@@ -214,10 +214,13 @@ li:hover .menu-text{
     align-items: flex-start;
     flex-direction: column-reverse;
     
-    justify-content: center;
+    /* justify-content: center;
     margin: 0% 5% 10% 5%;
+    min-height: 80vh; */
 
-    min-height: 80vh;
+    justify-content: flex-end;
+    min-height: 70vh;
+    margin: 0 5%;
   }
   .header{
     min-height: 10vh;
@@ -225,10 +228,15 @@ li:hover .menu-text{
   .headerImg{
     max-width: 60%;
   }
-  /* .header-text {
-    margin: 5% 0% 15% 0%;
-  } */
-
+  .dots-menu {
+      min-height: 75vh;
+  }
+  .header-text {
+    margin: 5% 0% 0% 0%;
+  }
+  .header {
+    min-height: 25vh;
+}
 }
 
 @media only screen and (min-width: 720px) and (max-width: 995px) {
