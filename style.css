@@ -178,16 +178,28 @@ li:hover .menu-text{
   height: 100vh;
 }
 
-@media only screen and (min-width: 996px) and (max-width: 1220px) {
+@media only screen and (min-width: 0px) and (max-width: 450px) {
   .header-text h1, .header-text h3{
-    font-size: 4.5rem;
+    font-size: 24px;
+  }
+  .headerImg{
+    max-width: 70%;
+  }
+  .header-text .para{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+}
+@media only screen and (min-width: 449px) and (max-width: 720px) {
+  .header-text h1, .header-text h3{
+    font-size: 36px;
+  }
+  .header-text .para{
+    font-size: 16px;
   }
 }
-@media only screen and (min-width: 720px) and (max-width: 995px) {
-  .header-text h1, .header-text h3{
-    font-size: 3.5rem;
-  }
-}
+
 @media only screen and (min-width: 0px) and (max-width: 720px) {
   .dots-menu {
     flex-direction: row-reverse;
@@ -204,46 +216,20 @@ li:hover .menu-text{
     margin: 5% 0%;
   }
 }
-@media only screen and (min-width: 449px) and (max-width: 720px) {
+
+@media only screen and (min-width: 720px) and (max-width: 995px) {
   .header-text h1, .header-text h3{
-    font-size: 36px;
-  }
-  .header-text .para{
-    font-size: 16px;
+    font-size: 3.5rem;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 450px) {
+
+@media only screen and (min-width: 996px) and (max-width: 1220px) {
   .header-text h1, .header-text h3{
-    font-size: 24px;
+    font-size: 4.5rem;
   }
-  .headerImg{
-    max-width: 70%;
-  }
-  .header-text .para{
-    font-size: 12px;
-    line-height: 15px;
-  }
-
 }
-
-
-@media only screen and (min-width: 0px) and (max-width: 485px) {
-
-}
-
-@media only screen and (min-width: 485px) and (max-width: 639px) {
-}
-
-@media only screen and (min-width: 640px) and (max-width: 1020px) {
-}
-
-@media only screen and (min-width: 640px) and (max-width: 965px) {
-
-}
-
 @media only screen and (min-width: 1400px){
   .header-text{
     flex-basis: 50%;
   }  
-  
 }
