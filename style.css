@@ -146,7 +146,7 @@ li:hover .menu-text{
 .header-text h1, .header-text h3{
   font-family: var(--aclonica);
   font-size: clamp(1rem, 7vw, 5rem);
-  color: aqua;
+  
 }
 .header-text h3{
   color: var(--purple);
