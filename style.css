@@ -54,7 +54,7 @@
 }
 .para{
   color: var(--grey);
-  font-size:  clamp(1rem, 3.5vw, 2rem);
+  font-size:  clamp(1rem, 3vw, 2rem);
   line-height: auto;
 }
 /* wrap 1--------- */
