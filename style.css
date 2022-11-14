@@ -146,7 +146,7 @@ li:hover .menu-text{
 .header-text h1, .header-text h3{
   font-family: var(--aclonica);
   font-size: 6rem;
-  color: yellow;
+  color: #FF6663;
 }
 .header-text h3{
   color: var(--purple);
@@ -215,6 +215,16 @@ li:hover .menu-text{
   }
   .header-text {
     margin: 5% 0%;
+  }
+  .dots-menu{
+    min-height: 80vh;
+  }
+  .header{
+    min-height: 10vh;
+  }
+
+  .wrap{
+    height: 90vh;
   }
 }
 
