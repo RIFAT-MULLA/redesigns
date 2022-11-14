@@ -212,7 +212,10 @@ li:hover .menu-text{
   .hero{
     align-items: flex-start;
     flex-direction: column-reverse;
-    margin: 0 5% 5% 5%;
+    
+    justify-content: center;
+    margin: 0% 5% 10% 5%;
+
     min-height: 80vh;
   }
   .header{
