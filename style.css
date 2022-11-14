@@ -234,9 +234,7 @@ li:hover .menu-text{
   .header-text {
     margin: 5% 0% 0% 0%;
   }
-  .header {
-    min-height: 25vh;
-}
+
 }
 
 @media only screen and (min-width: 720px) and (max-width: 995px) {
