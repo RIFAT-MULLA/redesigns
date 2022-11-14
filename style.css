@@ -145,7 +145,7 @@ li:hover .menu-text{
 
 .header-text h1, .header-text h3{
   font-family: var(--aclonica);
-  font-size: 6rem;
+  font-size: clamp(1rem, 7vw, 5rem);
   color: #fcabaa;
 }
 .header-text h3{
@@ -181,7 +181,7 @@ li:hover .menu-text{
 
 @media only screen and (min-width: 0px) and (max-width: 450px) {
   .header-text h1, .header-text h3{
-    font-size: 28px;
+    /* font-size: 24px; */
   }
   .headerImg{
     max-width: 70%;
@@ -196,7 +196,7 @@ li:hover .menu-text{
 }
 @media only screen and (min-width: 449px) and (max-width: 720px) {
   .header-text h1, .header-text h3{
-    font-size: 36px;
+    /* font-size: 36px; */
   }
   .header-text .para{
     font-size: 16px;
@@ -213,11 +213,6 @@ li:hover .menu-text{
   .hero{
     align-items: flex-start;
     flex-direction: column-reverse;
-    
-    /* justify-content: center;
-    margin: 0% 5% 10% 5%;
-    min-height: 80vh; */
-
     justify-content: flex-end;
     min-height: 70vh;
     margin: 0 5%;
@@ -239,13 +234,13 @@ li:hover .menu-text{
 
 @media only screen and (min-width: 720px) and (max-width: 995px) {
   .header-text h1, .header-text h3{
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
   }
 }
 
 @media only screen and (min-width: 996px) and (max-width: 1220px) {
   .header-text h1, .header-text h3{
-    font-size: 4.5rem;
+    /* font-size: 4.5rem; */
   }
 }
 @media only screen and (min-width: 1400px){
