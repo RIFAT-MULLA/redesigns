@@ -146,7 +146,6 @@ li:hover .menu-text{
 .header-text h1, .header-text h3{
   font-family: var(--aclonica);
   font-size: 6rem;
-  color: #000;
 }
 .header-text h3{
   color: var(--purple);
@@ -181,7 +180,7 @@ li:hover .menu-text{
 
 @media only screen and (min-width: 0px) and (max-width: 450px) {
   .header-text h1, .header-text h3{
-    font-size: 24px;
+    font-size: 28px;
   }
   .headerImg{
     max-width: 70%;
@@ -209,6 +208,10 @@ li:hover .menu-text{
     align-items: flex-start;
     flex-direction: column-reverse;
     margin: 0 5%;
+    min-height: 90vh;
+  }
+  .header{
+    min-height: 10vh;
   }
   .headerImg{
     max-width: 60%;
