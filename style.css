@@ -189,7 +189,9 @@ li:hover .menu-text{
     font-size: 12px;
     line-height: 15px;
   }
-
+  .hero{
+    min-height: 0vh;
+  }
 }
 @media only screen and (min-width: 449px) and (max-width: 720px) {
   .header-text h1, .header-text h3{
