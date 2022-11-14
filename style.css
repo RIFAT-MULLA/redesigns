@@ -200,7 +200,7 @@ li:hover .menu-text{
     flex-direction: column-reverse;
     justify-content: flex-end;
     min-height: 70vh;
-    margin: 0 5% 10% 5%;
+    margin: 0% 5% 10% 5%;
   }
   .header{
     min-height: 20vh;
@@ -212,9 +212,11 @@ li:hover .menu-text{
       min-height: 75vh;
   }
   .header-text {
-    margin: 5% 0% 0% 0%;
+    margin: 10% 0% 0% 0%;
   }
-
+  .para{
+    margin-top: 5px;
+  }
 }
 
 @media only screen and (min-width: 1400px){
