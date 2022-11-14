@@ -214,18 +214,9 @@ li:hover .menu-text{
     max-width: 60%;
   }
   .header-text {
-    margin: 5% 0%;
-  }
-  .dots-menu{
-    min-height: 80vh;
-  }
-  .header{
-    min-height: 10vh;
+    margin: 5% 0% 15% 0%;
   }
 
-  .wrap{
-    height: 90vh;
-  }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 995px) {
