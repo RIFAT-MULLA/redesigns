@@ -88,10 +88,10 @@
   font-size: 15px;
   font-family: var(--Roboto);
   font-weight: bold;
-  /* background: var(--purple); */
+  justify-content: center;
   border: 3px solid #9100FF;
 }
-.circlewrap #pop{
+.circlewrap .pop{
   margin: 0 10px 0 0;
 }
 
@@ -224,10 +224,10 @@ li:hover .menu-text{
   .para{
     margin-top: 5px;
   }
-  .circlewrap #pop{
+  .circlewrap .pop{
     display: none;
   }
-  .circlewrap:active #pop{
+  .circlewrap:hover .pop{
     display: block;
   }
   
