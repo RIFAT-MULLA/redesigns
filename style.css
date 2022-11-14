@@ -208,9 +208,10 @@ li:hover .menu-text{
   }
   .hero{
     align-items: flex-start;
+    justify-content: space-evenly;
     flex-direction: column-reverse;
-    margin: 0 5% 5% 5%;
-    min-height: 0vh;
+    margin: 0 5% 0% 5%;
+    min-height: 90vh;
   }
   .header{
     min-height: 10vh;
@@ -218,9 +219,9 @@ li:hover .menu-text{
   .headerImg{
     max-width: 60%;
   }
-  .header-text {
+  /* .header-text {
     margin: 5% 0% 15% 0%;
-  }
+  } */
 
 }
 
