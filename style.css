@@ -88,9 +88,19 @@
   font-size: 15px;
   font-family: var(--Roboto);
   font-weight: bold;
-  background: var(--purple);
+  /* background: var(--purple); */
+  border: 3px solid #9100FF;
 }
-.noti{
+.circlewrap .pop{
+  margin: 0 10px 0 0;
+  display: none;
+}
+.circlewrap:hover .pop{
+  display: block;
+}
+
+
+/* .noti{
   position: absolute;
   top: -3px;
   right: 3px;
@@ -98,7 +108,8 @@
   height: 15px;
   border-radius: 50%;
   background: var(--white);
-}
+} */
+
 /* menu---- */
 .dots-menu {
   /* position: absolute; */
