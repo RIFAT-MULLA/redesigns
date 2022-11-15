@@ -548,8 +548,8 @@ li:hover .menu-text{
 }
 @media only screen and (min-width: 0px) and (max-width: 600px) {
     .wrap5 .swiper-slide {
-        width: 360px;
-        height: 350px;
+        width: 250px;
+        height: 200px;
     }
     
     .wrap5 .para{
