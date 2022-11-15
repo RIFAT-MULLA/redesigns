@@ -254,7 +254,7 @@ li:hover .menu-text{
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  /* background: linear-gradient(rgba(144, 0, 255, 0.17), rgba(0, 255, 234, 0.265)); */
+  background: linear-gradient(rgba(144, 0, 255, 0.17), rgba(0, 255, 234, 0.265));
 }
 .wrap2{
   display: flex;
