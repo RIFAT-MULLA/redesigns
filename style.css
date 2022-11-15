@@ -553,56 +553,60 @@ li:hover .menu-text{
   }
 }
 /*--------------------------------------------------------------
-# F.A.Q Section
+# Services dropContent Section
 --------------------------------------------------------------*/
-/* #faq {
-  padding: 60px 0;
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--Roboto);
+  font-weight: bold;
+  /* color: ; */
 }
-#faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-#faq .faq-list li {
-  border-bottom: 1px solid #e9eaed;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-#faq .faq-list .question {
-  display: block;
+
+.cardBox{
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.277);
+  border-radius: 25px;
+  padding: 10px 10px 20px 10px;
+  width: 300px;
+  height: 200px;
   position: relative;
-  font-family: #f82249;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
-  cursor: pointer;
-  color: #e0072f;
-  transition: 0.3s;
+  justify-content: flex-end;
 }
-#faq .faq-list i {
-  font-size: 16px;
+.cardBox .cardImg{
   position: absolute;
-  left: 0;
-  top: -2px;
+  border: 5px solid var(--white);
+  background: var(--purple);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: -40px;
 }
-#faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
+
+.cardBtns .one{
+  background: var(--purple);
+  padding: 7px 13px;
+  margin-bottom: 7px
 }
-#faq .faq-list .icon-show {
-  display: none;
+
+.cardBtns .two{
+  padding: 7px 13px;
+  color: var(--purple);
 }
-#faq .faq-list .collapsed {
-  color: black;
+
+.cardImg{
+  position: relative;
 }
-#faq .faq-list .collapsed:hover {
-  color: #f82249;
+.cardImg i{
+  /* border: 2px solid red; */
+  /* width: 50px; */
+  /* height: 0px; */
+  position: absolute;
+  top: 20px;
+  left: 19px;
+  font-size: 30px !important;
+  z-index: 999;
+  color: #fff;
 }
-#faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-#faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
-} */
