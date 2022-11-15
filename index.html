@@ -34,17 +34,12 @@
                 </div>
             </div>
             <div>
-                    <!-- <div class="btns circlewrap flex_a">
-                        <p id="pop">Featured Projects</p>
+                <ul>                
+                    <li class="btns circlewrap flex_a">
+                        <a href=""><p class="pop">Featured Projects</p></a>
                         <img src="img/rocket-solid.svg" width="30px" alt="">
-                    </div> -->
-
-                    <ul>                
-                        <li class="btns circlewrap flex_a">
-                            <p class="pop">Featured Projects</p>
-                            <img src="img/rocket-solid.svg" width="30px" alt="">
-                        </li>
-                     </ul>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -89,22 +84,107 @@
         </div>
 
     </div>
-<section class="wrap2">
-    <h1>lmkksjdkl</h1>
-</section>
+
+<!-- wrap2 -->
+<div class="strip2" id="wrap2">
+    <div class="wrap2">
+      <div class="intervals2 section1 ">
+            <h1 class="heading-text">Its all about<br>Experience</h1>
+        <!-- <h3>
+            "I've worked on projects from education to business sectors and have the potential to create high level designs from Digital marketing to web designing and more... "
+        </h3> -->
+        <p class="intervals2">
+          I've worked on projects from Education to Business sectors and have the potential to develop high-level designs from Digital marketing to web Development. Client satisfaction is something that has encouraged me so far.
+      </div>
+
+      <div class="section2">
+        
+<!-- Swiper -->
+<div class="wrap5 flex" id="wrap5">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide flex_col">
+          <img src="img/thumbnail1.jpg" alt="Web-design" />
+          <div class="para">
+            <a
+              href="https://spndbcadept1.wixsite.com/mysite-1"
+              target="_blank">Visit Project
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide flex_col">
+          <img src="img/thumbnail2.jpg" alt="Web-design" />
+          <div class="para">
+            <a
+              href="https://spndbcadept1.wixsite.com/mysite-1"
+              target="_blank">Visit Project
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide flex_col">
+          <img src="img/thumbnail3.jpg" alt="Web-design" />
+          <div class="para">
+            <a
+              href="https://spndbcadept1.wixsite.com/mysite-1"
+              target="_blank">Visit Project
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next button"></div>
+      <div class="swiper-button-prev button"></div>
+    </div>
+  </div>
+
+  <!-- ------------ -->
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- ----------- -->
+
 <script src="https://kit.fontawesome.com/41354f2a54.js" crossorigin="anonymous"></script>
+
+ <!-- Swiperjs JS link -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 <script>
 
+// swiper
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    freeMode: true,
+    grabcursor: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
 
-// function show(x) {
-//     var x = document.getElementById("pop");
-//     if (x.style.display == "none") {
-//             x.style.display = "block";
-//         } else {
-//             x.style.display = "none";
-//         }
-//     }
+
+// var swiper = new Swiper(".mySwiper", {
+//         slidesPerView: 3,
+//         spaceBetween: 30,
+//         freeMode: true,
+//         loop: true,
+//         pagination: {
+//           el: ".swiper-pagination",
+//           clickable: true,
+//         },
+//       });
 </script>
 </body>
 </html>
