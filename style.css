@@ -252,7 +252,7 @@ li:hover .menu-text{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(144, 0, 255, 0.17), rgba(0, 255, 234, 0.265));
 }
@@ -279,7 +279,7 @@ li:hover .menu-text{
 .headingBox{
   display: flex;
   align-items: center;
-  margin-top: 6%;
+  /* margin-top: 6%; */
 }
 .headingBox .line{
   background: #9100FF;
@@ -489,15 +489,8 @@ li:hover .menu-text{
   bottom: 0px;
   height: 100%;
   background: #9100ff5e;
-  color: white;
   font-size: 12px;
   border-radius: 10px;
-}
-.wrap5 .para p{
-    padding: 0px 20px;
-    color: white;
-    font-family: var(--roboto);
-    font-weight: 300;
 }
 .wrap5 .para a{
   border: none;
@@ -512,51 +505,12 @@ li:hover .menu-text{
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.wrap5 .para span{
-    margin: 0px 20px;
-    padding: 5px 10px;
-    background: #F39C04;
-    margin-right: 10px;
-    font-size: 12px;
-    font-family: var(--roboto);
-    font-weight: 600;
-    color: #060c21;
-    border-radius: 5px;
-}
-.wrap5 .para h4{
-    font-family: var(--roboto);
-    font-weight: bold;
-}
-.wrap5 .logo{
-    position: absolute;
-    right: 30px;
-    top: -50px;
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
-    border: 2px solid #f39b04;
-}
-.wrap5 .logo img{
-    border-radius: 13px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.wrap5 .button{
-    color: #9100FF;
-}
 @media only screen and (min-width: 0px) and (max-width: 600px) {
     .wrap5 .swiper-slide {
         width: 250px;
         height: 200px;
     }
-    
     .wrap5 .para{
         padding: 0 0;
-    }
-
-    .wrap5 .para h4 {
-        font-size: 12px;
-        margin-top: 20px;
     }
 }
