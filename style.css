@@ -636,3 +636,81 @@ li:hover .menu-text{
     font-size: 14px;
   }
 }
+
+/* wrapper4 */
+.wrap4{
+  background: var(--darkblue);
+}
+.wrapper4{
+  background: #161D33;
+  width: 100%;  
+  height: 40vh;
+}
+.wrap4 .container{
+  color: var(--white);
+  width: 75%;
+  height: 30vh;
+}
+.wrap4 .slogan{
+  z-index: 999;
+  /* margin-right: 3%; */
+  flex-basis: 100%;
+}
+.wrap4 .section i{
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  font-size: 100px;
+  
+  background: linear-gradient(rgba(145, 0, 255, 0.77) ,rgba(0, 0, 0, 0.593));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper4 h4 span{
+  background: linear-gradient(rgba(145, 0, 255, 0.77),rgba(0, 255, 234, 0.88));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrap4 .section{
+  position: relative;
+  font-family: var(--aclonica);
+  display: flex;
+  align-items: center;
+  width: 700px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrap4 .slogan h4{
+  font-size: 36px;
+}
+@media only screen and (min-width: 0px) and (max-width: 435px) {
+  .wrapper4{
+      height: 30vh;
+  }
+  .wrap4 .slogan h4{
+      font-size: 2rem;
+  }
+  .wrap4 .container{
+      width: 95%;
+      height: 20vh;
+  }
+}
+@media only screen and (min-width: 436px) and (max-width: 590px){
+.wrap4 .slogan h4{
+      font-size: 28px;
+  }
+  .wrap4 .container{
+      width: 95%;
+      height: 30vh;
+  }
+}
+@media only screen and (min-width: 591px) and (max-width: 785px){
+  .wrap4 .slogan h4{
+      font-size: 34px;
+  }
+  .wrap4 .container{
+      width: 90%;
+      height: 35vh;
+  }
+}
