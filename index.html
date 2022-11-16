@@ -336,9 +336,79 @@
     </div>
 
 <!-- wrap5 Featured Projects-->
-    <div class="wrap5">
 
+  <!-- wrapper5 -->
+  <div class="wrap5">
+    <div class="wrapper5">
+
+      <div class="section">
+        <div class="headingBox flex_a">
+          <div class="line"></div>
+          <h1 style="font-size: 36px;" class="heading-text">Featured Projects</h1>
+        </div>
+
+        <!-- Swiper -->
+        <div class="section2">
+          <div class="container">
+
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide flex_col">
+                  <img src="img/WEBSITE_D.svg" alt="Web-design" />
+                  <div class="para">
+                    <div class="tags">
+                      <span>Business</span>
+                      <div class="btns">Visit</div>
+                    </div>
+                    <div class="content">
+                      <h3>Vdesignz Website</h3>
+                      <p>A Digital Design Startup Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide flex_col">
+                  <img src="img/thumbnail1.jpg" alt="Web-design" />
+                  <div class="para">
+                    <div class="tags">
+                      <span>Educational</span>
+                      <div class="btns">Visit</div>
+                    </div>
+                    <div class="content">
+                      <h3>SpndBca Website</h3>
+                      <p>Departmental Website for S. P. N. Doshi Women's College</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide flex_col">
+                  <img src="img/POSTS_D.svg" alt="Web-design" />
+                  <div class="para">
+                    <div class="tags">
+                      <span>Educational</span>
+                      <div class="btns">Visit</div>
+                    </div>
+                    <div class="content">
+                      <h3>SpndBca Website</h3>
+                      <p>Departmental Website for S. P. N. Doshi Women's College</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- ------------ -->
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
   <!-- <script src="https://kit.fontawesome.com/41354f2a54.js" crossorigin="anonymous"></script> -->
 
   <!-- Swiperjs JS link -->
@@ -366,6 +436,24 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+    
+    // swiper
+    var swiper = new Swiper(".mySwiper2", {
+      cssMode: true,
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      freeMode: true,
+      grabcursor: true,
+      // autoplay: {
+      //   delay: 3000,
+      // },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
     });
 

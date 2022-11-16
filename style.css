@@ -475,9 +475,13 @@ li:hover .menu-text{
 .ansNques{
   padding: 10px 30px;
   margin: 20px 0px;
-  border: 3px dashed var(--purple); 
+  /* border: 3px dashed var(--black); */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='7' stroke-dashoffset='44' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+.ansNques:focus-within{
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.369);
 }
+
 .ansNques button{
   outline: none;
   text-decoration: none;
@@ -661,7 +665,7 @@ li:hover .menu-text{
 }
 .wrapper4 h4 span{
   line-height: 25px;
-  background: linear-gradient(rgba(145, 0, 255, 0.77),rgba(0, 255, 234, 0.88));
+  background: linear-gradient(rgba(0, 255, 234, 0.88), rgba(173, 66, 255, 0.965));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -706,5 +710,166 @@ li:hover .menu-text{
   .wrap4 .container{
       width: 90%;
       height: 35vh;
+  }
+}
+
+
+/* ---------------------wrap5---------------- */
+
+/* wrapper5 --------- */
+
+.wrap5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  background: rgb(220, 220, 220);
+}
+.wrap5 .wrapper5{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  margin-top: 30px;
+}
+.wrap5 .wrapper5 .section1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  z-index: 1;
+  border-left: 3px solid var(--purple);
+  padding-left: 20px;
+}
+.wrap5 .wrapper5 .section1 h1{
+  position: relative;
+}
+.wrap5 .headingBox .line{
+  background: #9100FF;
+  width: clamp(60px, 15vw, 100px);
+  height: 3px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.wrap5 .wrapper5 .heading{
+  position: relative;
+}
+
+.wrap5 .wrapper5 .section2{
+  margin: 3% 0px;
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+}
+.wrap5 .wrapper5 .section2 h4{
+  font-size: 15px;
+  color: white;
+  font-family: var(--roboto);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 785px) and (max-width: 985px) {
+  .wrap5 .wrapper5{
+      width: 75%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 785px) {
+  .wrap5 .wrapper5{
+      width: 80%;
+  }
+}
+
+/* swiper */
+/* wrapper5 */
+.wrap5 .section2 .container{
+    width: 100%;
+    height: 100%;
+}
+.wrap5 .section2 .container .myswiper{
+    width: 100%;
+    height: 80%;
+}
+.wrap5 .section2 .container .swiper-wrapper{   
+    scroll-behavior: auto;
+    width: 100vp;
+    height: 100%;
+}
+.wrap5 .section2 .container .swiper-slide {
+    scroll-behavior: auto;
+    border-radius: 25px;
+    width: 270px;
+    height: 100%;
+}
+.wrap5 .section2 .container .swiper-slide > img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    box-shadow: 8px 8px 15px 10px rgba(0, 0, 0, 0.427);
+
+}
+.wrap5 .section2 .container .para{
+  width: 100%;
+  color: #000;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  /* border: 2px solid red; */
+  padding: 10px 0px;
+}
+.wrap5 .tags{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: var(--Roboto);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--orange);
+  justify-content: space-between;
+}
+.wrap5 .tags .btns{
+  font-size: 12px;
+  background: var(--purple);
+  padding: 8px 25px;
+}
+.wrap5 .wrapper5 .content{
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+.wrap5 .wrapper5 .content h3{
+  margin: 8px 0 3px 0;
+  font-family: var(--aclonica);
+  font-size: 18px;
+}
+.wrap5 .wrapper5 .content p{
+  line-height: 16px;
+  font-family: var(--roboto);
+  font-size: 14px;
+  margin: 0 0;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .wrap5 .section2 .container .swiper-slide {
+        /* width: 210px;
+        height: 100%; */
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+  .wrap5 .wrapper5 .section1{
+    width: 85%;
+  }
+  .wrap5{
+    padding: 50px 0px;
   }
 }
