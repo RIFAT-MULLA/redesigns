@@ -247,7 +247,7 @@ li:hover .menu-text{
 
 /* wrap2 --------- */
 
-.strip2{
+.wrapper2{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,16 +305,16 @@ li:hover .menu-text{
   position: relative;
 }
 
-.wrap2 .section3{
+.wrap2 .section2{
   margin-top: 15%;
 }
-.wrap2 .section2{
+.wrap2 .section3{
   margin: 3% 0px;
   display: flex;
   align-self: flex-start;
   width: 100%;
 }
-.wrap2 .section2 h4{
+.wrap2 .section3 h4{
   font-size: 15px;
   color: white;
   font-family: var(--roboto);
@@ -334,14 +334,14 @@ li:hover .menu-text{
 
 /* swiper */
 /* wrap5 */
-.wrap5 .button {
+.section3 .container .button {
   color: #9000ff00;
 }
 .quotes{
   font-weight: bold;
   font-size: 64px;
 }
-.wrap5{
+.section3 .container{
     width: 100%;
     height: auto;
     /* background: #060c21; */
@@ -349,18 +349,18 @@ li:hover .menu-text{
     font-size: 14px;
     color: #000;
 }
-.wrap5 .myswiper{
+.section3 .container .myswiper{
     width: 100%;
     height: 80%;
 }
-.wrap5 .swiper-wrapper{   
+.section3 .container .swiper-wrapper{   
     scroll-behavior: auto;
     width: 100vp;
     height: 100%;
 }
 
 
-.wrap5 .swiper-slide {
+.section3 .container .swiper-slide {
     scroll-behavior: auto;
     border-radius: 25px;
     width: 300px;
@@ -385,14 +385,14 @@ li:hover .menu-text{
     -ms-flex-align: center;
     -webkit-align-items: center;
 }
-.wrap5 .swiper-slide > img {
+.section3 .container .swiper-slide > img {
     border-radius: 25px;
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.wrap5 .para{
+.section3 .container .para{
   display: flex;
   align-items: center;
   width: 100%;
@@ -407,10 +407,10 @@ li:hover .menu-text{
   transition: 0.5s;
 }
 
-.wrap5 .swiper-slide:hover .para{
+.section3 .container .swiper-slide:hover .para{
   background: linear-gradient(rgba(144, 0, 255, 0), rgba(0, 0, 0, 0));
 }
-.wrap5 .para a{
+.section3 .container .para a{
   border: none;
   background: #9100ff;
   display: inline-block;
@@ -429,11 +429,11 @@ li:hover .menu-text{
   } */
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
-    .wrap5 .swiper-slide {
+    .section3 .container .swiper-slide {
         width: 250px;
         height: 200px;
     }
-    .wrap5 .para{
+    .section3 .container .para{
         padding: 0 0;
     }
 }
@@ -442,20 +442,20 @@ li:hover .menu-text{
   .wrap2 .section1{
     width: 85%;
   }
-  .strip2{
+  .wrapper2{
     padding: 50px 0px;
   }
-  .wrap5 .button {
+  .section3 .container .button {
     color: #9000ff;
   }
-  .wrap2 .section3{
+  .wrap2 .section2{
     margin-top: 6%;
   }
 }
     
 
 /* wrapper 3 */
- .wrapper3{
+ .wrap3{
   padding: 5% 0px;
   background: white !important;
   min-height: 100vh;
@@ -465,7 +465,7 @@ li:hover .menu-text{
   align-items: center;
 }
 
-/* .wrapper3 .container{
+/* .wrap3 .container{
   border-left: 3px solid var(--purple);
 } */
 
@@ -502,7 +502,7 @@ li:hover .menu-text{
   text-decoration: none !important;
 }
 
-.wrapper3 h4{
+.wrap3 h4{
   margin: 0 20px 0 0;
   color: var(--black);
   font-family: var(--aclonica);
@@ -514,7 +514,7 @@ li:hover .menu-text{
 .card-body{
   padding: 15px;
 }
-.wrapper3 i{
+.wrap3 i{
   font-size: 36px;
 }
 .borderI {
@@ -534,31 +534,31 @@ li:hover .menu-text{
     border-left: 0px solid var(--purple);
   }
 
-  .wrapper3 .container{
+  .wrap3 .container{
     width: 100%;
     margin: 0 3%;
   }
-  .wrapper3{
+  .wrap3{
     margin: 3% 0;
     justify-content: flex-start;
   }
 }
 
 @media only screen and (min-width: 381px) and (max-width: 600px) {
-  .wrapper3 h4{
+  .wrap3 h4{
     font-size: clamp(1.5rem, 2vw, 4rem);
   }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 380px) {
-  .wrapper3 h4{
+  .wrap3 h4{
     font-size: clamp(1rem, 2vw, 4rem);
   }
-  .wrapper3 .ansNques{
+  .wrap3 .ansNques{
     padding: 0px 20px;
   }
 
-  .wrapper3 i{
+  .wrap3 i{
     font-size: 26px;
   }
   .borderI {
@@ -667,11 +667,13 @@ li:hover .menu-text{
   -webkit-text-fill-color: transparent;
 }
 .wrapper4 h4 span{
+  line-height: 25px;
   background: linear-gradient(rgba(145, 0, 255, 0.77),rgba(0, 255, 234, 0.88));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .wrap4 .section{
+  
   position: relative;
   font-family: var(--aclonica);
   display: flex;
@@ -680,7 +682,6 @@ li:hover .menu-text{
   text-align: center;
   text-transform: uppercase;
 }
-
 .wrap4 .slogan h4{
   font-size: 36px;
 }
@@ -692,7 +693,7 @@ li:hover .menu-text{
       font-size: 2rem;
   }
   .wrap4 .container{
-      width: 95%;
+      width: 100%;
       height: 20vh;
   }
 }
