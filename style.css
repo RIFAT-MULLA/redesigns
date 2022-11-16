@@ -334,14 +334,14 @@ li:hover .menu-text{
 
 /* swiper */
 /* wrap5 */
-.section3 .container .button {
+.section3 .containerr .button {
   color: #9000ff00;
 }
 .quotes{
   font-weight: bold;
   font-size: 64px;
 }
-.section3 .container{
+.section3 .containerr{
     width: 100%;
     height: auto;
     /* background: #060c21; */
@@ -349,18 +349,18 @@ li:hover .menu-text{
     font-size: 14px;
     color: #000;
 }
-.section3 .container .myswiper{
+.section3 .containerr .myswiper{
     width: 100%;
     height: 80%;
 }
-.section3 .container .swiper-wrapper{   
+.section3 .containerr .swiper-wrapper{   
     scroll-behavior: auto;
     width: 100vp;
     height: 100%;
 }
 
 
-.section3 .container .swiper-slide {
+.section3 .containerr .swiper-slide {
     scroll-behavior: auto;
     border-radius: 25px;
     width: 300px;
@@ -385,14 +385,14 @@ li:hover .menu-text{
     -ms-flex-align: center;
     -webkit-align-items: center;
 }
-.section3 .container .swiper-slide > img {
+.section3 .containerr .swiper-slide > img {
     border-radius: 25px;
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.section3 .container .para{
+.section3 .containerr .para{
   display: flex;
   align-items: center;
   width: 100%;
@@ -407,10 +407,10 @@ li:hover .menu-text{
   transition: 0.5s;
 }
 
-.section3 .container .swiper-slide:hover .para{
+.section3 .containerr .swiper-slide:hover .para{
   background: linear-gradient(rgba(144, 0, 255, 0), rgba(0, 0, 0, 0));
 }
-.section3 .container .para a{
+.section3 .containerr .para a{
   border: none;
   background: #9100ff;
   display: inline-block;
@@ -424,16 +424,13 @@ li:hover .menu-text{
   transition: all 0.3s ease;
 }
 
-/* #swiper .swiper-container{
-    padding-bottom: 3rem;
-  } */
-
 @media only screen and (min-width: 0px) and (max-width: 600px) {
-    .section3 .container .swiper-slide {
-        width: 250px;
+    .section3 .containerr .swiper-slide {
+        width: 230px;
         height: 200px;
+        margin-right: 15px !important;
     }
-    .section3 .container .para{
+    .section3 .containerr .para{
         padding: 0 0;
     }
 }
@@ -445,7 +442,7 @@ li:hover .menu-text{
   .wrapper2{
     padding: 50px 0px;
   }
-  .section3 .container .button {
+  .section3 .containerr .button {
     color: #9000ff;
   }
   .wrap2 .section2{
@@ -464,10 +461,6 @@ li:hover .menu-text{
   justify-content: center;
   align-items: center;
 }
-
-/* .wrap3 .container{
-  border-left: 3px solid var(--purple);
-} */
 
 #accordion{
   width: 80%;
