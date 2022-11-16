@@ -482,8 +482,24 @@ li:hover .menu-text{
 .ansNques{
   padding: 10px 30px;
   margin: 20px 0px;
-  border: 3px dashed var(--black); 
+  border: 3px dashed var(--purple); 
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.369);
+}
+.ansNques button{
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-link:focus, .btn-link:hover{
+  text-decoration: none;
+}
+
+.btn:focus{
+  outline: none !important;
+}
+.btn-link:focus, .btn-link:hover{
+  text-decoration: none !important;
 }
 
 .wrapper3 h4{
