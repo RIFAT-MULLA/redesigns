@@ -626,7 +626,7 @@ li:hover .menu-text{
   }
 .cardPara{
   
-  font-size: 12px;
+  font-size: 14px;
 }
   .ansNques {
       padding: 10px 15px;
@@ -634,6 +634,6 @@ li:hover .menu-text{
   .cardBtns .one{
     margin: 15px 0px;
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
