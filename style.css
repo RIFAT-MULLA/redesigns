@@ -563,18 +563,17 @@ li:hover .menu-text{
   text-align: center;
   font-family: var(--Roboto);
   font-weight: bold;
-  /* color: ; */
 }
-
+.card-body{
+  margin: 30px 0px;
+}
 .cardBox{
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.277);
+  padding: 0 40px;
   border-radius: 25px;
-  padding: 0px 10px 20px 10px;
-  margin: 30px 0px;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  min-height: 250px;
   position: relative;
-  justify-content: flex-end;
 }
 
 .cardBox .cardImg{
@@ -585,11 +584,14 @@ li:hover .menu-text{
   padding: 20px;
   top: -40px;
 }
-
+.cardPara{
+  margin-top: 10px;
+}
 .cardBtns .one{
+  margin: 15px 0px;
+  padding: 15px 25px;
+  border-radius: 25px;
   background: var(--purple);
-  padding: 10px 15px;
-  margin-bottom: 15px
 }
 
 .cardBtns .two{
@@ -601,17 +603,21 @@ li:hover .menu-text{
   color: #fff;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 470px) {
-  .cardBox .cardImg{
-    padding: 15px;
-    top: -30px;
-  }
+@media only screen and (min-width: 0px) and (max-width: 520px) {
+
   .cardBox{
-    padding: 0px 10px 20px 10px;
     width: 100%;
-    height: 200px;
   }
+.cardPara{
+  
+  font-size: 12px;
+}
   .ansNques {
-    padding: 10px 10px;
+      padding: 10px 15px;
+  }
+  .cardBtns .one{
+    margin: 15px 0px;
+    padding: 10px 20px;
+    font-size: 12px;
   }
 }
