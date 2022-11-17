@@ -77,9 +77,11 @@
   color: rgba(0, 0, 0, 0.701);
   font-family: var(--aclonica);
   background-attachment: fixed;
-  background-position: left;
+  /* background-position: bottom -50px right -150px; */
+  background-position: bottom -50px right 10px;
+
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: cover; 
   min-height: 90vh;   
   position: relative;
   box-sizing: border-box;
@@ -138,7 +140,6 @@
   align-items: center;
   margin-top: 30px;
   cursor: pointer;
-
 }
 
 .emailto .msg{
@@ -181,6 +182,11 @@
   }
   .wrap6 .content p{
     font-size: 12px;
+  }
+
+  
+.wrap6{
+  background-position: bottom -50px right -150px;
   }
 }
 
