@@ -498,7 +498,6 @@ li:hover .menu-text{
 .btn-link:focus, .btn-link:hover{
   text-decoration: none !important;
 }
-
 .wrap3 h4{
   margin: 0 20px 0 0;
   color: var(--black);
@@ -786,6 +785,7 @@ li:hover .menu-text{
 /* swiper */
 /* wrapper5 */
 .wrap5 .section2 .container{
+  padding: 0;
     width: 100%;
     height: 100%;
 }
@@ -810,7 +810,7 @@ li:hover .menu-text{
     width: 100%;
     height: 190px;
     object-fit: cover;
-    box-shadow: 8px 8px 15px 10px rgba(0, 0, 0, 0.427);
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 43%);
 
 }
 .wrap5 .section2 .container .para{
