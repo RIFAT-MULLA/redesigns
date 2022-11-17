@@ -111,15 +111,6 @@
   text-decoration: none;
 }
 
-/* .noti{
-  position: absolute;
-  top: -3px;
-  right: 3px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: var(--white);
-} */
 
 /* menu---- */
 .dots-menu {
@@ -510,15 +501,16 @@ li:hover .menu-text{
 .card-body{
   padding: 15px;
 }
-.wrap3 i{
-  font-size: 36px;
-}
-.borderI {
-  height: 41px;
-  border: 3px dashed #9000ff;
+.boxDropdown i{    
+  font-size: 29px;
+  border: 2px dashed var(--purple);
+  width: 33px;
+  height: 34px;
+  height: px;
   border-radius: 50%;
-  width: 41px;
+  padding-top: 1px;
 }
+
 .fa-circle{
   color: #9100FF;
 }
@@ -554,15 +546,12 @@ li:hover .menu-text{
     padding: 0px 20px;
   }
 
-  .wrap3 i{
-    font-size: 26px;
+  .wrap3 .boxDropdown i{
+    font-size: 22px;
+    height: 26px;
+    width: 26px;
   }
-  .borderI {
-    height: 30px;
-    border: 2px dashed #9000ff;
-    border-radius: 50%;
-    width: 30px;
-  }
+
 }
 /*--------------------------------------------------------------
 # Services dropContent Section
