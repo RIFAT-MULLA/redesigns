@@ -711,7 +711,7 @@ li:hover .menu-text{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
   background: rgb(255, 255, 255);
 }
@@ -722,18 +722,12 @@ li:hover .menu-text{
   width: 75%;
   margin-top: 30px;
 }
-.wrap5 .wrapper5 .section1{
+.wrap5 section{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
-  text-align: left;
-  z-index: 1;
-  border-left: 3px solid var(--purple);
-  padding-left: 20px;
-}
-.wrap5 .wrapper5 .section1 h1{
-  position: relative;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 80vh;
 }
 .wrap5 .headingBox .line{
   background: #9100FF;
@@ -848,16 +842,11 @@ li:hover .menu-text{
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
     .wrap5 .section2 .container .swiper-slide {
-        /* width: 210px;
-        height: 100%; */
         margin-right: 20px !important;
     }
 }
 
 @media only screen and (min-width: 720px) {
-  .wrap5 .wrapper5 .section1{
-    width: 85%;
-  }
   .wrap5{
     padding: 50px 0px;
   }
