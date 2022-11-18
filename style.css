@@ -722,7 +722,7 @@ li:hover .menu-text{
   width: 75%;
   margin-top: 30px;
 }
-.wrap5 section{
+.wrap5 .section{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
