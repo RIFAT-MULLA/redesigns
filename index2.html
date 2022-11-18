@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="img/logo.svg" type="image/x-icon" />
   <!-- Swiperjs CSS link-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -21,56 +21,174 @@
     @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:wght@100;300&display=swap');
   </style>
 
-
+<style>
+  .wrap1 h3 a{
+    color: var(--purple);
+  }
+  .wrap1 .header-text h3{
+    margin-top: 0px;
+  }
+  .wrap1 .header-text .hii{
+    font-family: var(--aclonica);
+    margin-bottom: 10px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: bold;
+  }
+</style>
 <body>
 
-  <!-- strip7 -->
-  <div class="wrap7 flex_col" id="wrap7">
-    <div class="sectionwrap">
-      <!-- <img src="img/mailBox.svg" alt=""> -->
-      <div class="section">
-        <div class="content">
-          <div class="box">
-            <h1 class="heading-text">Here to make a difference</h1>
-            <p class="subheading">The passage experienced a surge in popularity during the 1960s software. Use  or read on  passage experienced a surge in popularity during the 1960s software.</p>
-          </div>
-          <div class="emailto">
-              <span class="msg" onclick="modalclosing()" >
-                <h4>Let's talk...</h4>
-                <i class="fa fa-solid fa-circle"></i>
-              </span>
-          </div>
+  <div class="wrap1">
+
+    <div class="header flex_a">
+      <div class="flex_a">
+        <div>
+          <img src="img/logo.svg" alt="logo" width="70px" height="70px">
+        </div>
+        <div>
+          <p>&nbsp &nbsp Redesigns</p>
         </div>
       </div>
+      <div>
+        <ul>
+          <li class="btns circlewrap flex_a">
+            <a href="">
+              <p class="pop">Featured Projects</p>
+            </a>
+            <img src="img/rocket-solid.svg" width="30px" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
 
-      <div class="socials flex">
-        <div class="intervals6 box2 flex">
-          <a href="https://www.instagram.com/_vdesignz/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/v-designz" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <div class="dots-menu flex_a">
+      <div class="menuwrap flex_col">
+        <ul>
+          <li class="menu-box flex_a">
+            <p class="menu-text">Home</p>
+            <div class="circle"></div>
+          </li>
+          <li class="menu-box flex_a">
+            <p class="menu-text">About</p>
+            <div class="circle"></div>
+          </li>
+          <li class="menu-box flex_a">
+            <p class="menu-text">Contact</p>
+            <div class="circle"></div>
+          </li>
+          <li class="menu-box flex_a">
+            <p class="menu-text">Projects</p>
+            <div class="circle"></div>
+          </li>
+          <li class="menu-box flex_a">
+            <p class="menu-text">More</p>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="hero">
+        <div class="header-text">
+          <p class="hii">Hii, I am</p>
+          <h1 class="pm0">A FREELANCE</h1>
+          <!-- <h3 class="pm0">DIGITAL DESIGNER...</h3> -->
+          <h3>
+            <a href="" class="typewrite pm0" data-period="2000" data-type='[ "", "Digital Designer", "Web Developer", "Logo Designer" ]'>
+              <span class="wrap"></span>
+            </a>
+          </h3>
+          <p class="para">Engaging design for speeding up your business... <br>
+            <b>One step design solution</b> to cater all your needs
+          </p>
+          <a class="btns" href="">Contact</a>
+        </div>
+        <div class="headerImg">
+          <img src="img/header3.svg" alt="">
         </div>
       </div>
 
     </div>
+
   </div>
 
-
-
-
-  <!-- <script src="https://kit.fontawesome.com/41354f2a54.js" crossorigin="anonymous"></script> -->
 
   <!-- Swiperjs JS link -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
   <script>
+// typing effect
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+
+
+
 
     // swiper
-    var swiper = new Swiper(".mySwiper2", {
+    var swiper = new Swiper(".mySwiper", {
       cssMode: true,
       slidesPerView: "auto",
       spaceBetween: 30,
+      centeredSlides: true,
       freeMode: true,
       grabcursor: true,
+      loop: true,
+      // autoplay: {
+      //   delay: 3000,
+      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -80,6 +198,25 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+
+    
+    // swiper
+    var swiper = new Swiper(".mySwiper2", {
+      cssMode: true,
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      freeMode: true,
+      grabcursor: true,
+      // autoplay: {
+      //   delay: 3000,
+      // },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
 
   </script>
 
@@ -94,6 +231,9 @@
     crossorigin="anonymous"></script>
 
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+
+    
 </body>
 
 </html>

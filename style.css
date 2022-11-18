@@ -23,6 +23,7 @@
     --linear: linear-gradient(rgba(145, 0, 255, 1), rgba(0, 255, 234, 1));
 }
 .btns{
+  /* font-family: ; */
   color: var(--white);
   border-radius: 25px;
   position: relative;
@@ -67,6 +68,7 @@
   color: var(--purple);
 }
 /* wrap 1--------- */
+
 .hero{
   width: 100%;
   min-height: 80vh;
@@ -159,9 +161,19 @@ li:hover .menu-text{
   font-family: var(--aclonica);
   font-size: clamp(1rem, 7vw, 5rem);
 }
-.header-text h3{
+.wrap1 h3 a{
   color: var(--purple);
 }
+.wrap1 .header-text h3{
+  margin-top: 0px;
+}
+.wrap1 .header-text .hii{
+  font-family: var(--aclonica);
+  margin-bottom: 10px;
+}
+
+
+
 .header-text .btns{    
     display: inline-block;
     margin-top: 10px;
@@ -235,6 +247,10 @@ li:hover .menu-text{
     flex-basis: 50%;
   }  
 }
+
+
+
+
 
 /* wrap2 --------- */
 
@@ -501,7 +517,7 @@ li:hover .menu-text{
 .card-body{
   padding: 15px;
 }
-.boxDropdown i{    
+/* .boxDropdown i{    
   font-size: 29px;
   border: 2px dashed var(--purple);
   width: 33px;
@@ -509,6 +525,14 @@ li:hover .menu-text{
   height: px;
   border-radius: 50%;
   padding-top: 1px;
+} */
+
+.boxDropdown i{    
+  font-size: 29px;
+  padding: 3px 3px;
+  -webkit-text-fill-color: var(--purple);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: aqua;
 }
 
 .fa-circle{
@@ -546,12 +570,11 @@ li:hover .menu-text{
     padding: 0px 20px;
   }
 
-  .wrap3 .boxDropdown i{
+  /* .wrap3 .boxDropdown i{
     font-size: 22px;
     height: 26px;
     width: 26px;
-  }
-
+  } */
 }
 /*--------------------------------------------------------------
 # Services dropContent Section
