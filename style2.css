@@ -70,11 +70,11 @@
 
 
 
-/* strip6 */
-.wrap6{
+/* strip7 */
+.wrap7{
   /* background-color: var(--white); */
   background: url(img/BgLast.svg);
-  color: rgba(0, 0, 0, 0.683);
+  color: rgba(0, 0, 0, 0.583);
   font-family: var(--aclonica);
   background-attachment: fixed;
   background-position: center;
@@ -85,21 +85,21 @@
   position: relative;
   box-sizing: border-box;
 }
-.wrap6 .sectionwrap{
+.wrap7 .sectionwrap{
   height: 400px;
   width: 85%;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.wrap6 .section{
+.wrap7 .section{
   width: 100%;
 }
-.wrap6 .content{
+.wrap7 .content{
   width: 520px;
 }
 
-.wrap6 .content a{
+/* .wrap7 .content a{
   font-size: 14px;
   padding: 10px 12px;
   margin-bottom: 0;
@@ -107,25 +107,25 @@
   width: 130px;
   border-radius: 20px;
   color: white;
-}
-.socials{
+} */
+.wrap7 .socials{
   align-self: flex-end;
   position: absolute;
   bottom: 20px;
 }
-.wrap6 .content h1{
+.wrap7 .content h1{
   font-family: var(--aclonica);
   color: var(--purple);
   width: 100%;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-.wrap6 .content p{
+.wrap7 .content p{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 16px;
 }
-.emailto{
+.wrap7 .emailto{
   width: 100%;
   height: 50px;
   display: flex;
@@ -133,12 +133,10 @@
   align-items: center;
   margin-top: 30px;
   cursor: pointer;
-
 }
 
-.emailto .msg{
-  transition: all 0.5s ease;
-  font-size: 20px;            
+.wrap7 .emailto .msg{
+  transition: all 0.5s ease;       
   width: 70%;
   height: 100%;
   border-radius: 15px;
@@ -148,7 +146,7 @@
   margin-right: 10px;
   position: relative;
 }
-.emailto i{
+.wrap7 .emailto i{
   font-size: 30px;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 3px;
@@ -162,7 +160,7 @@
   right: -5px;
 }
 
-.wrap6 .socials a{
+.wrap7 .socials a{
   font-size: 30px;
   margin: 0px 5px;
   background: linear-gradient(rgba(145, 0, 255, 1) ,rgba(0, 255, 234, 1));
@@ -171,10 +169,10 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 620px) {
-  .wrap6 .content {
+  .wrap7 .content {
     width: 100%;
   }
-  .wrap6 .content p{
+  .wrap7 .content p{
     font-size: 12px;
   }
 }
