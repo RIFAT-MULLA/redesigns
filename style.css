@@ -163,6 +163,7 @@ li:hover .menu-text{
 }
 .wrap1 h3 a{
   color: var(--purple);
+  text-decoration: none;
 }
 .wrap1 .header-text h3{
   margin-top: 0px;
@@ -1131,11 +1132,37 @@ li:hover .menu-text{
   -webkit-text-fill-color: transparent;
 }
 
+
+/* -----------------wrap8-------------- */
+
+
+.wrap8{
+  min-height: 10vh;
+  background-color: var(--purple);
+  color: white;
+}
+.wrap8 i{
+  font-size: 40px;
+}
+.wrap8 .footer {
+  width: 90%;
+  justify-content: space-between;
+}
+.wrap8 p{
+  margin-bottom: 3px;
+}
+.footerText{
+  border-bottom: 1px solid aqua;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 620px) {
   .wrap7 .content {
     width: 100%;
   }
   .wrap7 .content p{
     font-size: 12px;
+  }
+  .wrap8 .footer {
+    width: 85%;
   }
 }
