@@ -1156,10 +1156,10 @@ li:hover .menu-text{
 
 .inputs{
 
-  border-top: 2px solid #9000ffaa;
-  border-right: 2px solid #9000ffaa;
-  border-bottom: 2px solid rgba(0, 255, 255, 0.687);
-  border-left: 2px solid aqua;
+  border-top: 3px solid #9000ff;
+  border-right: 3px solid #9000ffdf;
+  border-bottom: 3px solid rgba(0, 255, 255, 0.687);
+  border-left: 3px solid aqua;
   border-radius: 10px;
   padding: 12px 10px;
   background-color: rgba(0, 0, 0, 0);
@@ -1187,7 +1187,7 @@ li:hover .menu-text{
   background-color: #000000;
   color: #fff;
   z-index: 999;
-  /* display: none; */
+  display: none;
 }
 
 
