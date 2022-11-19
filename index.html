@@ -25,7 +25,7 @@
 <body>
 
 
-  <div class="wrap1">
+  <div class="wrap1" id="wrap1">
 
     <div class="header flex_a">
       <div class="flex_a">
@@ -128,28 +128,31 @@
                 <div class="swiper-slide flex_col">
                   <img src="img/WEBSITE_D.svg" alt="Web-design" />
                   <div class="para">
-                    <a href="https://spndbcadept1.wixsite.com/mysite-1" target="_blank">Website Designs
+                    <a class="item active" data-name="web" data-toggle="modal"
+                    data-target=".bd-example-modal-lg">Website Designs
                     </a>
                   </div>
                 </div>
                 <div class="swiper-slide flex_col">
                   <img src="img/LOGO_D.svg" alt="Web-design" />
                   <div class="para">
-                    <a href="https://spndbcadept1.wixsite.com/mysite-1" target="_blank">Logo Designs
+                    <a class="item" data-name="logo" data-toggle="modal" data-target=".bd-example-modal-lg">Logo Designs
                     </a>
                   </div>
                 </div>
                 <div class="swiper-slide flex_col">
                   <img src="img/POSTS_D.svg" alt="Web-design" />
                   <div class="para">
-                    <a href="https://spndbcadept1.wixsite.com/mysite-1" target="_blank">Social Media Designs
+                    <a class="item active" data-name="poster" data-toggle="modal"
+                    data-target=".bd-example-modal-lg">Social Media Designs
                     </a>
                   </div>
                 </div>
                 <div class="swiper-slide flex_col">
                   <img src="img/thumbnail3.jpg" alt="Web-design" />
                   <div class="para">
-                    <a href="https://spndbcadept1.wixsite.com/mysite-1" target="_blank">Brochures or Posters
+                    <a class="item active" data-name="card" data-toggle="modal"
+                    data-target=".bd-example-modal-lg">Brochures or Posters
                       or<br>Events
                     </a>
                   </div>
@@ -168,7 +171,53 @@
     </div>
   </div>
 
-  <!-- ----------- -->
+
+    <!-- hidden strip -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <span class="closebtn closeIcon" onclick="closee()"><i class="fas fa-times" aria-hidden="true"></i></span>
+        <div class="gallery flex modal-dialog modal-lg ">
+
+            <div class="image" data-name="poster"><span><img src="img2/poster1.jpg" alt="posters"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign1.png" alt="web-designs"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign2.png" alt="web-designs"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign3.png" alt="web-designs"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign4.png" alt="web-designs"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign5.png" alt="web-designs"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign6.png" alt="web-designs"></span></div>
+            <div class="image" data-name="web"><span><img src="img2/webdesign7.png" alt="web-designs"></span></div>
+
+            <div class="image" data-name="logo"><span><img src="img2/logo1.png" alt="logo-designs"></span></div>
+            <div class="image" data-name="logo"><span><img src="img2/logo2.png" alt="logo-designs"></span></div>
+            <div class="image" data-name="logo"><span><img src="img2/logo3.png" alt="logo-designs"></span></div>
+            <div class="image" data-name="logo"><span><img src="img2/logo4.png" alt="logo-designs"></span></div>
+            <div class="image" data-name="logo"><span><img src="img2/logo5.jpg" alt="logo-designs"></span></div>
+            <div class="image" data-name="logo"><span><img src="img2/logo6.png" alt="logo-designs"></span></div>
+
+            <div class="image" data-name="poster"><span><img src="img2/poster2.jpg" alt="posters"></span></div>
+            <div class="image" data-name="poster"><span><img src="img2/poster3.jpg" alt="posters"></span></div>
+
+            <div class="image" data-name="card"><span><img src="img2/card1.png" alt="cards"></span></div>
+            <div class="image" data-name="card"><span><img src="img2/card2.png" alt="cards"></span></div>
+            <div class="image" data-name="card"><span><img src="img2/card3.png" alt="cards"></span></div>
+            <div class="image" data-name="card"><span><img src="img2/card4.png" alt="cards"></span></div>
+        </div>
+    </div>
+    <!-- fullscreen img preview box -->
+    <div class="preview-box">
+      <div class="details">
+          <span class="title flex">
+              <p></p>
+          </span>
+          <span class="icon fas fa-times"></span>
+      </div>
+      <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+
+    <!-- hidden strip end-->
+
+  
 
 
   <div class="wrap3">
@@ -519,6 +568,75 @@
 
 <!-- wrap 7 -->
 <div class="wrap7 flex_col" id="wrap7">
+
+
+    <!-- <div class="contactform"> -->
+      <div class="wrapmodal" id="wrapmodal">
+        <div class="wrapform flex">
+          <span><i class="fas fa-times" onclick="modalclosing()"></i></span>
+  
+          <div class="contentform flex_col">
+            <div class="formText">
+              <h2 class="heading">Hey there...</h2>
+              <p>Please fill this form...It's easy</p>
+            </div>
+            <!-- <div class="emailus flex">
+              <a href="mailto: randomMail@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://www.instagram.com/instagram/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div> -->
+  
+            <form class="form" action="https://formspree.io/f/mwkaaoon" method="POST">
+  
+              <div class="flex inputGrp grp1">
+                <div class="mright">
+                  <input class="inputs" type="text" id="name" name="fname" class="form__input input1" autocomplete="off"
+                    placeholder="Name" required />
+                </div>
+                <div>
+                  <input class="inputs" type="email" id="email" name="email" class="form__input input2" autocomplete="off"
+                    placeholder="E-mail" required />
+                </div>
+              </div>
+  
+              <div class="flex inputGrp grp2">
+                <div class="mright">
+                  <input class="inputs" placeholder="What service do you need?" id="service" name="service"
+                    class="form__input input3" autocomplete="off" list="food" required />
+                  <datalist id="food">
+                    <option value="Digital Marketing"></option>
+                    <option value="Web Development" checked></option>
+                    <option value="Logo Designing"></option>
+                    <option value="Brochures or Business Cards"></option>
+                    <option value="Event Invitation Cards"></option>
+                  </datalist>
+                </div>
+                <div>
+                  <input class="inputs" type="text" id="business-type" name="businesstype" class="form__input input2"
+                    autocomplete="off" placeholder="Business Type" required />
+                </div>
+              </div>
+  
+              <div class="inputGrp grp3">
+                <textarea class="inputs" id="message" name="message" class="form__input input3" autocomplete="off"
+                  placeholder="Tell me in short about your business..." required></textarea>
+                </div>
+  
+              <div class="submit flex">
+                <!-- <br /> -->
+                <button class="btns" type="submit">Send</button>
+              </div>
+            </form>
+  
+  
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
   <div class="sectionwrap">
     <!-- <img src="img/mailBox.svg" alt=""> -->
     <div class="section">
@@ -553,122 +671,14 @@
     <div class="footerText">
       <p>Redesigns all rights reserved</p>
     </div>
-    <i class="fas fa-arrow-circle-up"></i>
+    <a href="#wrap1"><i class="fas fa-arrow-circle-up btns"></i></a>
   </div>
 </div>
-  <!-- <script src="https://kit.fontawesome.com/41354f2a54.js" crossorigin="anonymous"></script> -->
-
-  <!-- Swiperjs JS link -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-  <script>
+ 
 
-// typing effect
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-
-
-
-
-
-    // swiper
-    var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      slidesPerView: "auto",
-      spaceBetween: 30,
-      centeredSlides: true,
-      freeMode: true,
-      grabcursor: true,
-      loop: true,
-      // autoplay: {
-      //   delay: 3000,
-      // },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-
-    
-    // swiper
-    var swiper = new Swiper(".mySwiper2", {
-      cssMode: true,
-      slidesPerView: "auto",
-      spaceBetween: 30,
-      freeMode: true,
-      grabcursor: true,
-      // autoplay: {
-      //   delay: 3000,
-      // },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-
-
-  </script>
-
+  <!-- font-awesome -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -679,8 +689,15 @@ var TxtType = function(el, toRotate, period) {
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+  <!-- Bootstrap JS CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+  <!-- Swiperjs JS link -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- External JS File -->
+  <script src="script.js"></script>
 
     
 </body>
