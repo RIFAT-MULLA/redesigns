@@ -1,14 +1,22 @@
-    // close modal
-    function closee() {
-      document.querySelector(".modal-backdrop").style.display = "none";
-      document.querySelector(".modal").style.display = "none";    
-      document.querySelector("body").style.paddingRight= "0px";
-      document.querySelector("body").style.overflowY = "scroll";   
-  }
-
+ 
   //selecting all required elements
   const filterItem = document.querySelector(".wrapper2");
   const filterImg = document.querySelectorAll(".gallery .image");
+  // window.onload = ()=>{ 
+              
+ 
+  // }
+
+
+
+
+
+
+
+
+
+
+
 
 // typing effect
   var TxtType = function (el, toRotate, period) {
@@ -129,6 +137,21 @@
       }
   }
 
+
+   // close modal
+   function closee() {
+    modal = document.querySelector(".modal");
+    modalbackdrop = document.querySelector(".modal-backdrop");
+    modalbackdrop2 = document.querySelector(".modal-backdrop.fade.in");
+    modal.classList.remove("show");    
+    modal.style.display = "none"; 
+    modalbackdrop.classList.remove("show");   
+    modalbackdrop.style.display = "none";
+       
+    modalbackdrop2.style.display = "none";
+    document.querySelector("body").style.paddingRight= "0px";
+    document.querySelector("body").style.overflowY = "scroll";   
+}
 
 
 
