@@ -1,20 +1,10 @@
- 
-  //selecting all required elements
+ //selecting all required elements
   const filterItem = document.querySelector(".wrapper2");
   const filterImg = document.querySelectorAll(".gallery .image");
   // window.onload = ()=>{ 
               
  
   // }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -121,7 +111,7 @@
   let selectedImgCategory = element.getAttribute("data-name"); 
   previewImg.src = selectedPrevImg; 
   categoryName.textContent = selectedImgCategory;
-
+  
   document.querySelector(".modal").style.display= "none";
   document.querySelector(".modal-backdrop").style.display= "none";
 
