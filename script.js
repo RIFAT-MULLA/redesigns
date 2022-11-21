@@ -194,7 +194,7 @@
       // contactmodal
       function modalclosing() {
         x = document.getElementById("wrapmodal");
-        if (x.style.display === "block") {
+        if (x.style.display == "block") {
             x.style.display = "none";
             document.querySelector("body").style.overflow="auto";  
             x.style.position = "relative"; 
@@ -207,3 +207,43 @@
         }
 
 
+// contact form
+
+var form = document.getElementById("form");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  var successPage = document.getElementById("successPage");
+
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      successPage.style.display = "flex";
+      form.reset()
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          alert(data["errors"].map(error => error["message"]).join(", "));
+        } else {
+          alert("Oops! There was a problem submitting your form");
+        }
+      })
+    }
+  }).catch(error => {
+    alert("Oops! There was a problem submitting your form");
+  });
+}
+form.addEventListener("submit", handleSubmit)
+
+
+
+function closeSuccessPage(){
+  document.getElementById("successPage").style.display="none";
+  modalclosing();
+}
