@@ -247,3 +247,136 @@ function closeSuccessPage(){
   document.getElementById("successPage").style.display="none";
   modalclosing();
 }
+
+
+
+
+
+// See Details------------------    
+    
+let products = [
+  {
+    id: 1,
+    d_title: "Web Development",
+    
+    d_details: "Types of Websites :",
+    d_desc1: "Educational or Business Websites",
+    d_desc2: "Portfolio Websites",
+    d_desc3: "1 Page Advertisemnet Websites ( For Events Registrations, Shop Advertising  )",
+    d_desc4: "Website to display your Art and reviews",
+    d_perks: "Perks",
+    d_perks1: "Fully customizable",
+    d_perks2: "Pocket friendly pricing",
+    d_perks3: "Responsive Website (Both Mobile and Laptops)",
+  },
+  {
+    id: 2,
+    d_title: "LOGO DESIGNING",
+    
+    d_details: "Logo Description :",
+    d_desc1: ".svg File",
+    d_desc2: ".png and .jpg also available",
+    d_desc3: "Background transparent",
+    d_desc4: "High Qaulity Designs",
+
+    d_perks: "Perks",
+    d_perks1: "Fully customizable",
+    d_perks2: "Brand Colors used",
+    d_perks3: "Updates available",
+  },
+  {
+    id: 3,
+    d_title: "DIGITAL MARKETING",
+    
+    d_details: "Types of Designs :",
+    d_desc1: "Social Media posts designs",
+    d_desc2: "Upcoming Events Announcement Designs",
+    d_desc3: "Sales Announcement Designs",
+    d_desc4: "Contact for more details",
+
+    d_perks: "Perks",
+    d_perks1: "Designs all Social Media Platforms",
+    d_perks2: "Brochures, Banners, Flyers, Posts",
+    d_perks3: "Budget Friendly",
+  },
+  {
+    id: 4,
+    d_title: "ALL CARDS and PARTY INVITATIONS",
+    
+    d_details: "Type of Designs :",
+    d_desc1: "Business Cards",
+    d_desc2: "Party Invitations",
+    d_desc3: "Wedding Invitations",
+    d_desc4: "Props Designs",
+
+    d_perks: "Perks",
+    d_perks1: "Updates Available",
+    d_perks2: "Low Pricing",
+    d_perks3: "Contact for more details",
+  },
+  {
+    id: 5,
+    d_title: "BRAND KIT",
+    
+    d_details: "Combo Offer Includes :",
+    d_desc1: "Logo Design",
+    d_desc2: "Business Card",
+    d_desc3: "Website",
+    d_desc4: "Social Media Templates",
+
+    d_perks: "Perks",
+    d_perks1: "All in one Combo Offer",
+    d_perks2: "Cost effective",
+    d_perks3: "Time Saving",
+  },
+
+
+];
+
+
+// See Details
+  var modalBtns = document.querySelectorAll(".seeDetails");
+  modalBtns.forEach(function (btn) {
+      btn.onclick = function () {
+
+      if (btn.classList.contains("showDetails")) {
+          document.getElementById("d_title").innerHTML = "";
+          document.getElementById("d_details").innerText = "";
+          document.getElementById("d_desc1").innerText = "";
+          document.getElementById("d_desc2").innerText = "";
+          document.getElementById("d_desc3").innerText = "";
+          document.getElementById("d_desc4").innerText = "";
+          
+          document.getElementById("d_perks").innerText = "";
+          document.getElementById("d_perks1").innerText = "";
+          document.getElementById("d_perks2").innerText = "";
+          document.getElementById("d_perks3").innerText = "";
+      }
+      var itemId = btn.getAttribute("data-name");
+      for (let i = 0; i < 5; i++) {
+          if (itemId == products[i].id) {
+              document.getElementById("detailsWrap").style.display="block";
+              btn.classList.add("showDetails");
+              document.getElementById("d_title").innerHTML = products[i].d_title;
+              document.getElementById("d_details").innerText = products[i].d_details;
+              document.getElementById("d_desc1").innerText = products[i].d_desc1;
+              document.getElementById("d_desc2").innerText = products[i].d_desc2;
+              document.getElementById("d_desc3").innerText = products[i].d_desc3;
+              document.getElementById("d_desc4").innerText = products[i].d_desc4;
+            
+              document.getElementById("d_perks").innerText = products[i].d_perks;
+              document.getElementById("d_perks1").innerText = products[i].d_perks1;
+              document.getElementById("d_perks2").innerText = products[i].d_perks2;
+              document.getElementById("d_perks3").innerText = products[i].d_perks3;
+            } else {
+              continue;
+          }
+      }
+  }
+});
+
+// closeDetails
+  var closeDetails = document.getElementById("closeDetails");
+  closeDetails.onclick = function(){
+      document.getElementById("detailsWrap").style.display="none";
+  }
