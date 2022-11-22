@@ -631,7 +631,9 @@ li:hover .menu-text{
 }
 
 .cardBtns .two{
-  color: var(--purple);
+  color: var(--orange);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .cardImg i{
