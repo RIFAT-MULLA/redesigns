@@ -487,6 +487,7 @@ li:hover .menu-text{
   border-left: 3px solid var(--purple);
 }
 .boxDropdown{
+  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1543,8 +1544,5 @@ body{
   }
   #detailsWrap #d_details, #detailsWrap #d_perks{
     font-size: 14px;
-  }
-  #detailsWrap ul li{
-    font-size: 12px;
   }
 }
