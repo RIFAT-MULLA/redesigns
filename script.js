@@ -339,7 +339,7 @@ let products = [
   modalBtns.forEach(function (btn) {
       btn.onclick = function () {
 
-      if (btn.classList.contains("showDetails")) {
+      if (btn.classList.contains("popDetails")) {
           document.getElementById("d_title").innerHTML = "";
           document.getElementById("d_details").innerText = "";
           document.getElementById("d_desc1").innerText = "";
@@ -356,7 +356,7 @@ let products = [
       for (let i = 0; i < 5; i++) {
           if (itemId == products[i].id) {
               document.getElementById("detailsWrap").style.display="block";
-              btn.classList.add("showDetails");
+              btn.classList.add("popDetails");
               document.getElementById("d_title").innerHTML = products[i].d_title;
               document.getElementById("d_details").innerText = products[i].d_details;
               document.getElementById("d_desc1").innerText = products[i].d_desc1;
@@ -380,3 +380,21 @@ let products = [
   closeDetails.onclick = function(){
       document.getElementById("detailsWrap").style.display="none";
   }
+
+
+  // MenuColor Change
+  var menu = document.querySelectorAll(".menuItem");
+  function removeColor(){
+    for (var i = 0; i<menu.length; i++) {
+      if(menu[i].classList.contains("addColor")){
+        menu[i].classList.remove("addColor");
+      }
+    }
+  }
+
+  menu.forEach(function (btn) {
+    btn.onclick = function () {
+      removeColor();
+      btn.classList.add("addColor");
+    }
+  });

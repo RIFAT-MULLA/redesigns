@@ -1546,3 +1546,9 @@ body{
     font-size: 14px;
   }
 }
+.collapse{
+  display: none !important;
+}
+.addColor{
+  color: var(--white);
+}
