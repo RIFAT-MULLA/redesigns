@@ -1236,7 +1236,7 @@ li:hover .menu-text{
   color: rgba(255, 255, 255, 0.569);
 }
 .wrapmodal span, .closebtn{
-  color: aqua;
+  color: var(--purple);
   position: absolute;
   top: 25px;
   right: 25px;
@@ -1370,10 +1370,10 @@ li:hover .menu-text{
   left: 0;
   height: 1px;
   width: 80%;
-  background-color: #f39c04;
+  background-color: var(--purple);
 }
 .details .icon{ 
-  color: white;
+  color: var(--purple);
   font-style: 22px;
   cursor: pointer;
   font-size: 20px;

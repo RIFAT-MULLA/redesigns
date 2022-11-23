@@ -121,7 +121,7 @@
       closeIcon.onclick = ()=>{ 
           previewBox.classList.remove("show");
           shadow.classList.remove("show");
-          document.querySelector("body").style.overflow = "auto";
+          // document.querySelector("body").style.overflow = "auto";
           document.querySelector(".modal ").style.display= "block";
           document.querySelector(".modal-backdrop").style.display= "block";
       }
