@@ -70,7 +70,7 @@
           });
           }
       }
-      for (let i = 2; i < filterImg.length; i++) {
+      for (let i = 0; i < filterImg.length-4; i++) {
           filterImg[i].setAttribute("onclick", "preview(this)"); 
       }
 // ...

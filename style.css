@@ -79,7 +79,7 @@ body{
   justify-content: center;
 }
 .wrap1{
-  background: url(img/bg.svg);
+  background: url(img/headerBg.svg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -104,6 +104,7 @@ body{
   justify-content: center;
   border: 3px solid #9100FF;
 }
+
 .circlewrap .pop{
   margin: 0 10px 0 0;
 }
@@ -833,7 +834,10 @@ li:hover .menu-text{
     height: 190px;
     object-fit: cover;
     box-shadow: 4px 4px 20px rgb(0 0 0 / 43%);
-
+    transition: all 0.3s ease;
+}
+.wrap5 .section2 .container .swiper-slide > img:hover {
+  transform: scale(0.9);
 }
 .wrap5 .section2 .container .para{
   width: 100%;
@@ -1000,7 +1004,12 @@ li:hover .menu-text{
   align-items: center;
   
   padding: 10px 15px;
+  transition: all 0.3s ease;
 }
+.wrap6 .section2 .container .reviewBox:hover{
+  transform: translateY(-15px);
+}
+
 .wrap6 .tags{
   margin-top: 20px;
   width: 100%;
@@ -1219,6 +1228,7 @@ li:hover .menu-text{
   color: #fff;
   z-index: 1000;
   display: none;
+  overflow-x: hidden !important;
 }
 
 
@@ -1283,14 +1293,17 @@ li:hover .menu-text{
 .gallery .image span{
   display: flex;
   width: 100%;
+  border: 2px solid var(--purple);
+  border-radius: 15px;
 }
 .gallery .image img{
   width: 100%;
   vertical-align: middle;
   transition: all 0.3s ease;
+  border-radius: 15px;
 }
 .gallery .image:hover img{
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .gallery .image .hide{
   display: none;
