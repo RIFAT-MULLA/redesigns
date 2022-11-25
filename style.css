@@ -1052,7 +1052,7 @@ li:hover .menu-text{
 /* strip7 */
 .wrap7{
   /* background-color: var(--white); */
-  background: url(img/BgLast.svg);
+  background: url(img/footerBg.svg);
   color: rgba(0, 0, 0, 0.583);
   font-family: var(--aclonica);
   background-attachment: fixed;

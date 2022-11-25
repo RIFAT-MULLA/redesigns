@@ -70,7 +70,7 @@
           });
           }
       }
-      for (let i = 3; i < filterImg.length; i++) {
+      for (let i = 2; i < filterImg.length; i++) {
           filterImg[i].setAttribute("onclick", "preview(this)"); 
       }
 // ...
@@ -264,6 +264,7 @@ let products = [
     d_desc2: "Portfolio Websites",
     d_desc3: "1 Page Advertisemnet Websites ( For Events Registrations, Shop Advertising  )",
     d_desc4: "Website to display your Art and reviews",
+    
     d_perks: "Perks",
     d_perks1: "Fully customizable",
     d_perks2: "Pocket friendly pricing",
@@ -289,25 +290,25 @@ let products = [
     d_title: "DIGITAL MARKETING",
     
     d_details: "Types of Designs :",
-    d_desc1: "Social Media posts designs",
-    d_desc2: "Upcoming Events Announcement Designs",
-    d_desc3: "Sales Announcement Designs",
-    d_desc4: "Contact for more details",
+    d_desc1: "Designs for all Social Media Platforms",
+    d_desc2: "Posts, Brochures, Banners, Flyers,etc",
+    d_desc3: "Upcoming Events Announcement Designs",
+    d_desc4: "Sales Announcement Designs",
 
     d_perks: "Perks",
-    d_perks1: "Designs all Social Media Platforms",
-    d_perks2: "Brochures, Banners, Flyers, Posts",
-    d_perks3: "Budget Friendly",
+    d_perks1: "Social Media posts designs",
+    d_perks2: "Budget Friendly",
+    d_perks3: "Contact for more details",
   },
   {
     id: 4,
-    d_title: "ALL CARDS and PARTY INVITATIONS",
+    d_title: "ALL CARDS, PROPS and INVITATIONS",
     
     d_details: "Type of Designs :",
     d_desc1: "Business Cards",
     d_desc2: "Party Invitations",
     d_desc3: "Wedding Invitations",
-    d_desc4: "Props Designs",
+    d_desc4: "Props Designs and more",
 
     d_perks: "Perks",
     d_perks1: "Updates Available",
@@ -319,10 +320,10 @@ let products = [
     d_title: "BRAND KIT",
     
     d_details: "Combo Offer Includes :",
-    d_desc1: "Logo Design",
-    d_desc2: "Business Card",
-    d_desc3: "Website",
-    d_desc4: "Social Media Templates",
+    d_desc1: "Website",
+    d_desc2: "Logo Design",
+    d_desc3: "Business Card",
+    d_desc4: "Social Media Templates Grid",
 
     d_perks: "Perks",
     d_perks1: "All in one Combo Offer",
