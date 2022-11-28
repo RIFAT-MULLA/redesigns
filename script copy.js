@@ -1,3 +1,4 @@
+
 // preloder
 var loader = document.getElementById("preloader");
     window.addEventListener("load",function(){
@@ -7,15 +8,16 @@ var loader = document.getElementById("preloader");
 // scrollreveal
 ScrollReveal().reveal('.intervals1', { delay: 200, interval: 300 });
 ScrollReveal().reveal('.intervals2', { easing: 'ease-in', delay: 500, interval: 300 });
-ScrollReveal().reveal('.intervals3', { easing: 'ease-in', delay: 500, interval: 100 });
-ScrollReveal().reveal('.intervals4', { easing: 'ease-in', delay: 500, interval: 200 });
+ScrollReveal().reveal('.intervals3', { easing: 'ease-in', delay: 1000, interval: 100 });
+ScrollReveal().reveal('.intervals4', { easing: 'ease-in', delay: 1000, interval: 200 });
 ScrollReveal().reveal('.intervals5', { easing: 'ease-in', delay: 1000, interval: 200 });
-ScrollReveal().reveal('.intervals6', { easing: 'ease-in', delay: 500, interval: 200 });
-ScrollReveal().reveal('.intervals7', { easing: 'ease-in', delay: 500, interval: 200 });
+ScrollReveal().reveal('.intervals6', { easing: 'ease-in', delay: 1000, interval: 200 });
+ScrollReveal().reveal('.intervals7', { easing: 'ease-in', delay: 1000, interval: 200 });
 
 //selecting all required elements
-const filterItem = document.querySelector(".wrapper2");
-const filterImg = document.querySelectorAll(".gallery .image");
+  const filterItem = document.querySelector(".wrapper2");
+  const filterImg = document.querySelectorAll(".gallery .image");
+
 
 // typing effect
   var TxtType = function (el, toRotate, period) {
@@ -27,18 +29,24 @@ const filterImg = document.querySelectorAll(".gallery .image");
   this.tick();
   this.isDeleting = false;
   };
+
   TxtType.prototype.tick = function () {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
+
     if (this.isDeleting) {
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
+
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
     var that = this;
     var delta = 200 - Math.random() * 100;
+
     if (this.isDeleting) { delta /= 2; }
+
     if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
       this.isDeleting = true;
@@ -47,11 +55,14 @@ const filterImg = document.querySelectorAll(".gallery .image");
       this.loopNum++;
       delta = 500;
     }
+
     setTimeout(function () {
       that.tick();
     }, delta);
   };
+
 window.onload = function () {
+
   filterItem.onclick = (selectedItem)=>{ 
     document.querySelector(".gallery").style.display = "flex";
     if(selectedItem.target.classList.contains("item")){ 
@@ -73,7 +84,9 @@ window.onload = function () {
 for (let i = 0; i < filterImg.length-4; i++) {
   filterImg[i].setAttribute("onclick", "preview(this)"); 
 }
+
 // Typing effect
+
   var elements = document.getElementsByClassName('typewrite');
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-type');
@@ -88,6 +101,7 @@ for (let i = 0; i < filterImg.length-4; i++) {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
 
 //fullscreen image preview function
 const previewBox = document.querySelector(".preview-box"),
@@ -117,6 +131,8 @@ document.querySelector(".modal-backdrop").style.display= "none";
           document.querySelector(".modal-backdrop").style.display= "block";
       }
   }
+
+
    // close modal
    function closee() {
     modal = document.querySelector(".modal");
@@ -132,58 +148,72 @@ document.querySelector(".modal-backdrop").style.display= "none";
     document.querySelector("body").style.overflowY = "scroll";   
 }
 
-// swiper
-var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  centeredSlides: true,
-  freeMode: true,
-  grabcursor: true,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
-// swiper
-var swiper = new Swiper(".mySwiper2", {
-  cssMode: true,
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  freeMode: true,
-  grabcursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+  // swiper
+  var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    freeMode: true,
+    grabcursor: true,
+    loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
-// contactmodal
-function modalclosing() {
-  x = document.getElementById("wrapmodal");
-  if (x.style.display == "block") {
-    x.style.display = "none";
-    document.querySelector("body").style.overflow="auto";  
-    x.style.position = "relative"; 
-  } else {
-      x.style.display = "block";
-      x.style.overflow = "scroll";
-      document.querySelector("body").style.overflow="hidden";  
-      x.style.position = "fixed"; 
-  }
-}
+
+
+  // swiper
+  var swiper = new Swiper(".mySwiper2", {
+    cssMode: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    freeMode: true,
+    grabcursor: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+      // contactmodal
+      function modalclosing() {
+        x = document.getElementById("wrapmodal");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+            document.querySelector("body").style.overflow="auto";  
+            x.style.position = "relative"; 
+        } else {
+            x.style.display = "block";
+            x.style.overflow = "scroll";
+            document.querySelector("body").style.overflow="hidden";  
+            x.style.position = "fixed"; 
+            }
+        }
+
 
 // contact form
+
 var form = document.getElementById("form");
+    
 async function handleSubmit(event) {
   event.preventDefault();
   var successPage = document.getElementById("successPage");
+
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -209,12 +239,20 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+
 function closeSuccessPage(){
   document.getElementById("successPage").style.display="none";
   modalclosing();
 }
 
-// See Details  
+
+
+
+
+// See Details------------------    
+    
 let products = [
   {
     id: 1,
@@ -291,11 +329,16 @@ let products = [
     d_perks2: "Cost effective",
     d_perks3: "Time Saving",
   },
+
+
 ];
-  // See Details
+
+
+// See Details
   var modalBtns = document.querySelectorAll(".seeDetails");
   modalBtns.forEach(function (btn) {
       btn.onclick = function () {
+
       if (btn.classList.contains("popDetails")) {
           document.getElementById("d_title").innerHTML = "";
           document.getElementById("d_details").innerText = "";
@@ -332,25 +375,26 @@ let products = [
   }
 });
 
-  // closeDetails
+// closeDetails
   var closeDetails = document.getElementById("closeDetails");
   closeDetails.onclick = function(){
-    document.getElementById("detailsWrap").style.display="none";
+      document.getElementById("detailsWrap").style.display="none";
   }
 
 
-// MenuColor Change
-var menu = document.querySelectorAll(".menuItem");
-function removeColor(){
-  for (var i = 0; i<menu.length; i++) {
-    if(menu[i].classList.contains("addColor")){
-      menu[i].classList.remove("addColor");
+  // MenuColor Change
+  var menu = document.querySelectorAll(".menuItem");
+  function removeColor(){
+    for (var i = 0; i<menu.length; i++) {
+      if(menu[i].classList.contains("addColor")){
+        menu[i].classList.remove("addColor");
+      }
     }
   }
-}
-    menu.forEach(function (btn) { 
+
+  menu.forEach(function (btn) {
     btn.onclick = function () {
-    removeColor();
-    btn.classList.add("addColor");
-  }
-});
+      removeColor();
+      btn.classList.add("addColor");
+    }
+  });
