@@ -1098,7 +1098,7 @@ li:hover .menu-text {
   color: var(--white);
   z-index: 1000;
   display: none;
-  overflow-y: scroll !important;
+  overflow: scroll !important;
 }
 .wrapform {
   position: relative;
