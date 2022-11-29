@@ -263,13 +263,13 @@ let products = [
   },
   {
     id: 4,
-    d_title: "ALL CARDS, PROPS and INVITATIONS",
+    d_title: "ALL CARDS and INVITATIONS",
     
     d_details: "Type of Designs :",
     d_desc1: "Business Cards",
     d_desc2: "Party Invitations",
     d_desc3: "Wedding Invitations",
-    d_desc4: "Props Designs and more",
+    d_desc4: "Thanks Giving Cards and more",
 
     d_perks: "Perks",
     d_perks1: "Updates Available",

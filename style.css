@@ -110,8 +110,22 @@ li p{
   text-decoration: none;
 }
 .header .name {
+  position: relative;
   font-family: var(--aclonica);
 }
+
+.header .name::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+    height: 2px;
+    border-radius: 50px;
+    width: 50%;
+    background-color: var(--purple);
+}
+
+
 /* menu */
 .dots-menu {
   min-height: 80vh;
@@ -1034,10 +1048,11 @@ li:hover .menu-text {
   justify-content: space-between;
 }
 .wrap8 p {
+  margin-left: 10px;
   margin-bottom: 3px;
 }
-.footerText {
-  border-bottom: 1px solid var(--neon);
+.footerText span{
+  font-family: var(--aclonica);
 }
 @media only screen and (min-width: 0px) and (max-width: 620px) {
   .wrap7 .content {
@@ -1183,7 +1198,7 @@ li:hover .menu-text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  background: #060c21;
+  background: var(--purple);
   max-width: 500px;
   width: 100%;
   z-index: 1051;
@@ -1222,17 +1237,21 @@ li:hover .menu-text {
   position: absolute;
   bottom: 0px;
   left: 0;
-  height: 1px;
+  height: 2px;
+  border-radius: 50px;
   width: 80%;
-  background-color: var(--purple);
+  background-color: var(--white);
 }
+
 .details .icon {
-  color: var(--purple);
+  color: var(--white);
   font-style: 22px;
   cursor: pointer;
   font-size: 20px;
 }
+
 .preview-box .image-box {
+  position: relative;
   width: 100%;
   display: flex;
 }
@@ -1273,7 +1292,7 @@ li:hover .menu-text {
   top: 0px;
   right: 0px;
   color:var(--white);
-  z-index: 999;
+  z-index: 1000;
   font-family: var(--aclonica);
 }
 #successPage h3 {
