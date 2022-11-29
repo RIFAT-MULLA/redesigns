@@ -1089,21 +1089,21 @@ li:hover .menu-text {
   min-height: 100px;
 }
 .wrapmodal {
+  display: none;
   position: absolute;
-  top: 0px;
-  left: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   background-color: var(--black);
   color: var(--white);
-  z-index: 1000;
-  display: none;
-  overflow: scroll !important;
+  z-index: 1;
 }
 .wrapform {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 .contentform {
   align-items: flex-start;
