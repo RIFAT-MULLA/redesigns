@@ -60,9 +60,11 @@ li p{
 }
 .para {
   color: var(--grey);
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.3rem, 3vw, 2rem);
   line-height: auto;
 }
+
+
 .heading-text {
   font-family: var(--aclonica);
   font-size: clamp(1rem, 7vw, 5rem);
@@ -206,6 +208,11 @@ li:hover .menu-text {
 }
 .headerImg img {
   width: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 300px) {
+  .para .break{
+    display: none;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 450px) {
   .header-text h1, .header-text h3 {
@@ -904,7 +911,7 @@ li:hover .menu-text {
   padding: 10px 15px;
   transition: all 0.3s ease;
 }
-.wrap6 .section2 .container .reviewBox:hover {
+.wrap6 .section2 .container .reviewBox:hover{
   transform: translateY(-15px);
 }
 .wrap6 .tags {
