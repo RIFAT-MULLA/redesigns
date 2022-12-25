@@ -1107,7 +1107,7 @@ li:hover .menu-text {
   height: auto;
   background-color: var(--black);
   color: var(--white);
-  z-index: 1;
+  z-index: 1000;
 }
 .wrapform {
   position: relative;
